@@ -1,13 +1,40 @@
 package org.example.questao1;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Professor {
     private int id;
     private String nome;
-    private Curso[] cursos;
+    private List<Curso> cursos;
 
-    public void adicionar_curso(String nome) {
-        int id = this.cursos.length;
+    public Professor(int id, String nome) {
+        this.id = id;
+        this.nome = nome;
+        this.cursos = new ArrayList<>();
+    }
 
-        novo_curso = new Curso(id, nome);
+    public void adicionar_curso(Curso curso) {
+        this.cursos.add(curso);
+    }
+
+    public List<Curso> getCursos() {
+        return this.cursos;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 }
