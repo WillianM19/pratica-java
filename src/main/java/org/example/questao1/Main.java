@@ -1,14 +1,11 @@
-package org.example;
-import org.example.questao1.Aluno;
-import org.example.questao1.Curso;
-import org.example.questao1.Professor;
-
+package org.example.questao1;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args){
 
+//      Questão 1
         List<Aluno> alunos = new ArrayList<>();
         List<Professor> professores = new ArrayList<>();
         List<Curso> cursos = new ArrayList<>();
@@ -35,8 +32,6 @@ public class Main {
         alunos.add(aluno3);
 
         exibir_alunos_do_curso(alunos, cursoADS);
-
-
 
     }
 
